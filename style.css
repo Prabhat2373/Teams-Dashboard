@@ -1,0 +1,408 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: adobe-clean, sans-serif;
+    
+}
+body
+{
+    background: #ffdddd69;
+}
+.logoHead
+{
+    font-weight: 500;
+    padding: 35px;
+
+}
+.side-nav
+{
+    background: #32CD32;
+    position: absolute;
+    height: 112vh;
+    width: 15%;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+.nav-tabs
+{
+    position: absolute;
+    top:100px;
+    left: -14px;
+}
+.nav-tabs li 
+{
+    list-style: none;
+    padding: 9px;
+    /* border: 2px solid; */
+    margin: 12px;
+    width: 107%;
+    text-align:start;   
+}
+.in-active
+{
+    background: #6fff6f;
+    border-right: 6px solid #fff;
+}
+.nav-tabs li a 
+{
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.team-heading
+{
+    font-weight: 300;
+    text-align: center;
+}
+#icon
+{
+    filter: invert(1);
+}
+#team-name
+{
+    padding: 15px 25px;
+    color: #32CD32;
+    font-weight: 800;
+    border: none;
+    border-radius: 9px;
+    outline: none;
+}
+.top-bar 
+{
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 77%;
+    padding: 20px;
+}
+.top-ul
+{
+    display: flex;
+    flex-direction: row;
+}
+.top-ul li
+{
+    list-style: none;
+    margin: 12px;
+    height: 26px;
+   
+}
+.top-ul li a
+{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.322);
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px; 
+}
+.top-ul li a.active
+{
+    color: #000;
+    border-bottom: 4px #32CD32 solid;
+}
+.user-profile
+{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid rgba(0, 0, 0, 0.295);
+    padding-left: 14px;
+
+}
+.user-img
+{
+    width: 50px;
+    height: 50px;
+
+}
+.user-name
+{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 6px;
+}
+.btn-group
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 7px;
+}
+.btn
+{
+    padding: 11px 16px;
+    background: #32CD32;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-weight: 600;
+    cursor: pointer;
+}
+.search-inp
+{
+    outline: none;
+    border: none;
+    opacity: 0.5;
+}
+.search-img
+{
+    position: absolute;
+    right: 178px;
+    width: 19px;
+    top: 29px;
+    opacity: 0.35;
+}
+.body-main
+{
+    position: absolute;
+    width: 78%;
+    right: 0;
+    top: 70px;
+}
+
+/* code for Modal  */
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+    width: 40%;
+}
+
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+
+.close-button:hover {
+    background-color: darkgray;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 2;
+}
+.modal-head
+{
+    text-align: center;
+    padding: 12px;
+    /* margin: 1px 41px; */
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2F2F2F;
+}
+.modal-form
+{
+    padding: 10px 20px 0px 0px;
+}
+.name-inp
+{
+    width: 100%;
+    padding: 13px;
+    outline: none;
+    border: 1px solid #00000073;
+    border-radius: 4px;
+    color: #00000094;
+}
+.modal-inp
+{
+    padding: 12px;
+    color: #A7A7A7;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.modal-date-div
+{
+    padding: 4px;
+    margin: 18px 0px;
+}
+.modal-btn-container
+{
+    display: flex;
+    justify-content: space-between;
+}
+.modal-btn
+{
+    width: 48%;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-family: system-ui;
+}
+.modal-info-h
+{
+    color: #2F2F2F;
+}
+.modal-schedule-duration
+{
+    display: flex;
+    justify-content: space-between;
+}
+/* .close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+
+.close-button:hover {
+    background-color: darkgray;
+} */
+
+/* .show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+} */
+
+.schedule-card
+{
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 16px;
+    width: 95%;
+}
+.duration
+{
+    color: #0000006e;
+    padding: 4px;
+}
+.weeks
+{
+    padding: 0 9px;
+    border-right: 1px solid;
+}
+.sessions
+{
+    padding: 8px;
+}
+.utility
+{
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+}
+.utility-img
+{
+    width: 20px;
+    height: 20px;
+}
+.schedule-utilities
+{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+
+}
+.dates-container
+{
+    display: flex;
+    padding: 6px 10px;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+}
+
+.dates-main
+{
+    display: flex;
+}
+.date-head
+{
+    opacity: 0.5;
+    font-size: 10px;
+}
+.date-info
+{
+    margin: 4px;
+    padding: 6px;
+}
+.date
+{
+    font-size: 16px;
+    padding: 6px 0px;
+}
+
+.days-ul
+{
+    display: flex;
+    justify-content: center;
+}
+.days-ul li
+{
+    list-style: none;
+    margin: 10px 22px;
+    font-size: 14px;
+    color: #000000a1;
+    padding: 15px 20px;
+}
+.days-ul li a
+{
+    color: #32CD32;
+    text-decoration: none;
+}
+.days-ul li.day-in
+{
+    border: 2px solid #32CD32;
+    color: #32CD32;
+    font-weight: 600;
+}
+.days-ul li.day-in::before
+{
+    content: "";
+    position: absolute;
+    background: #32CD32;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 3px -14px;
+}

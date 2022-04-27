@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams dashboard</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/ebbc014d53.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="side-nav" id="left-nav">
+            <div class="logoContainer">
+               <h1 class="logoHead"> LOGO</h1>
+            </div>
+            <div class="nav-tabs">
+                <ul class="nav-list">
+                    <li> <a href="#"> <box-icon type='solid' name='pie-chart-alt-2'></box-icon> Dashboard</a></li>
+                    <li><a href="#">Tactics Vault</a></li>
+                    <li><a href="#">Teams</a></li>
+                    <li class="in-active"><a href="#" >Schedule Generator</a></li>
+                    <li><a href="#">Weekly Traning Plans</a></li>
+                    <li><a href="#">Team Metrics</a></li>
+                    <li><a href="#">Customizations</a></li>
+                </ul>
+            </div>
+            <div class="select-team">
+                <h5 class="team-heading">Select Your Team</h5>
+                <label for="team-name">
+                    <select name="teamName" id="team-name">
+                        <option value="Team Name">Team Name</option>
+                    </select>
+                </label>
+            </div>
+        </nav>
+    </header>
+    <section class="top-main">
+        <div class="top-bar">
+            
+                <ul class="top-ul">
+                    <li><a href="#" class="active">Teams</a></li>
+                    <li><a href="#" >U23</a></li>
+                    <li><a href="#">U19</a></li>
+                </ul>
+                <div class="user-profile">
+                    <img src="/User_Circle.png" alt="user image" class="user-img" id="profile-pic">
+                    <h4 class="user-name" id="user-name">Marcus <box-icon name='chevron-down'></box-icon></h4>
+                </div>
+          
+        </div>
+
+    </section>
+    <section class="body-main">
+        <div class="btn-container">
+            <div class="btn-group">
+                <button class="btn add-btn" id="add-btn">
+                    Add New Schedule
+                </button>
+                <input type="search" name="search" id="search" class="search-inp" placeholder="Search your schedule">
+                <img src="https://img.icons8.com/fluency-systems-regular/48/000000/search--v1.png" class="search-img"/>
+            </div>
+        </div>
+        <div class="modal show-modal">
+            <div class="modal-content">
+                <h3 class="modal-head">Create New Schedule</h3>
+                <form action="/new-schedule" class="modal-form">
+                    <h5 class="modal-info-h">
+                        Schedule Name
+                    </h5>
+                    <input type="text" id="schedule-name" name="name" placeholder="Enter Name" class="name-inp inp">
+                    <div class="modal-schedule-duration">
+                        <div class="modal-date-div">
+                            <h5 class="modal-info-h">
+                                Start Date
+                            </h5>
+                            <input type="date" name="start-date" id="start-date" class="modal-inp inp">
+                        </div>
+                       <div class="modal-date-div">
+                        <h5 class="modal-info-h">
+                            End Date
+                        </h5>
+                        <input type="date" name="end-date" id="end-date" class="modal-inp inp">
+                       </div>
+                       <div class="modal-date-div">
+                        <h5 class="modal-info-h">
+                            Enter No. of Weeks
+                        </h5>
+                        <input type="number" name="weeks-number" id="num-weeks" class="modal-inp inp" placeholder=" Enter No. of Weeks">
+                       </div>
+                    </div>
+                </form>
+                <div class="modal-btn-container">
+                    <button class="close-button modal-btn">Close</button>
+                    <button class="create-button btn modal-btn">Create</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="schedule-update">
+            <div class="schedule-card">
+                <div class="schedule-head">
+                    <h3 class="schedule-title">Winter Training Schedule</h3>
+                    <h5 class="duration"><span class="weeks">4 weeks</span><span class="sessions">12 Sessions</span></h5>
+                </div>
+                <div class="shedule-utilities">
+                    <button class="utility"><box-icon type='solid' name='pencil'></box-icon></button>
+                    <button class="utility"><img src="https://img.icons8.com/color/48/000000/filled-trash.png" class="utility-img"/></button>
+                    <button class="utility"><box-icon type='solid' name='up-arrow'></box-icon></button>
+                </div>
+            </div>
+        </div>
+        <div class="date-updater">
+            <div class="dates-container">
+                <div class="dates-main">
+                    <div class="date-info">
+                        <h4 class="date-head">
+                            START DATE 
+                        </h4>
+                        <h3 class="date">
+                            25 january 2020
+                        </h3>
+                    </div>
+                    <div class="date-info">
+                        <h4 class="date-head">
+                            END DATE 
+                        </h4>
+                        <h3 class="date">
+                            25 january 2020
+                        </h3>
+                    </div>
+                </div>
+                <div class="update-container">
+                    <button class="btn update-btn">
+                        Update
+                    </button>
+                </div>
+            </div>
+            <div class="days-container">
+                <ul class="days-ul">
+                    <li class="days-li">SUNDAY</li>
+                    <li class="days-li">MONDAY</li>
+                    <li class="day-in"><a href="">TUESDAY</a></li>
+                    <li class="days-li">WEDNESDAY</li>
+                    <li class="days-li">THURSDAY</li>
+                    <li class="days-li">FRIDAY</li>
+                    <li class="days-li">SATURDAY</li>
+                </ul>
+            </div>
+        </div>
+        <div class="schedule-info-container">
+            <div class="schedule-card">
+                <div class="schedule-head">
+                    <h3 class="schedule-title">Winter Training Schedule</h3>
+                    <h5 class="duration"><span class="weeks">4 weeks</span><span class="sessions">12 Sessions</span></h5>
+                </div>
+                <div class="shedule-utilities">
+                    <box-icon name='up-arrow' type='solid' rotate='180' ></box-icon>
+                </div>
+            </div> 
+            <div class="schedule-card">
+                <div class="schedule-head">
+                    <h3 class="schedule-title">Winter Training Schedule</h3>
+                    <h5 class="duration"><span class="weeks">4 weeks</span><span class="sessions">12 Sessions</span></h5>
+                </div>
+                <div class="shedule-utilities">
+                    <box-icon name='up-arrow' type='solid' rotate='180' ></box-icon>
+                </div>
+            </div> 
+            <div class="schedule-card">
+                <div class="schedule-head">
+                    <h3 class="schedule-title">Winter Training Schedule</h3>
+                    <h5 class="duration"><span class="weeks">4 weeks</span><span class="sessions">12 Sessions</span></h5>
+                </div>
+                <div class="shedule-utilities">
+                    <box-icon name='up-arrow' type='solid' rotate='180' ></box-icon>
+                </div>
+            </div>
+             <div class="schedule-card">
+                <div class="schedule-head">
+                    <h3 class="schedule-title">Winter Training Schedule</h3>
+                    <h5 class="duration"><span class="weeks">4 weeks</span><span class="sessions">12 Sessions</span></h5>
+                </div>
+                <div class="shedule-utilities">
+                    <box-icon name='up-arrow' type='solid' rotate='180' ></box-icon>
+                </div>
+            </div>
+            <div class="schedule-card">
+                <div class="schedule-head">
+                    <h3 class="schedule-title">Winter Training Schedule</h3>
+                    <h5 class="duration"><span class="weeks">4 weeks</span><span class="sessions">12 Sessions</span></h5>
+                </div>
+                <div class="shedule-utilities">
+                    <box-icon name='up-arrow' type='solid' rotate='180' ></box-icon>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="/script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+</body>
+</html>
